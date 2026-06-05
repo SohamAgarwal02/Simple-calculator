@@ -1,4 +1,4 @@
-<html>
+
 <html>
 <head>
     <title>Simple Calculator</title>
@@ -6,20 +6,28 @@
 </head>
 <body>
 
-    <h2>Simple Calculator</h2>
-    <h5>Enter number 1 and number 2</h5>
-<input type="number" id="num1">
-<input type="number" id="num2">
+    <main>
 
-    <br><br>
-   <h3>Choose Options</h3>
+        <h2>Simple Calculator</h2>
 
-    <button onclick="calculate('add')">Add(+)</button>
-    <button onclick="calculate('subtract')">Subtract(-)</button>
-    <button onclick="calculate('multiply')">Multiply(*)</button>
-    <button onclick="calculate('divide')">Divide(/)</button>
+        
 
-    <h3 id="result">Answer</h3>
+        <label for="num1">First Number</label><br>
+        <input type="number" id="num1"><br><br>
+
+        <label for="num2">Second Number</label><br>
+        <input type="number" id="num2"><br><br>
+
+        <h3>Choose Operation</h3>
+
+        <button onclick="calculate('add')">Add (+)</button>
+        <button onclick="calculate('subtract')">Subtract (-)</button>
+        <button onclick="calculate('multiply')">Multiply (*)</button>
+        <button onclick="calculate('divide')">Divide (/)</button>
+
+        <h3 id="result">Answer</h3>
+
+    </main>
 
     <script src="script1.js"></script>
 

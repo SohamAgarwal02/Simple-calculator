@@ -14,9 +14,9 @@ h3 {
     font-size: 40px;
     color: green;
 }
-h5 {
-    font-size:40px;
-    color: green;
+label {
+    color: purple;
+    font-size: 20px;
 }
 input {
      color: red;
