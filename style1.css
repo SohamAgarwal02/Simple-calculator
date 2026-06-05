@@ -1,26 +1,26 @@
 body {
     font-family: Verdana, sans-serif;
     text-align: center;
-    padding-top: 100px;
-    font-size: 80px;
-     background-color: lightblue;
+    padding-top: 50px;
+    font-size: 20px;
+    background-color: lightblue;
 }
 
 input {
     width: 300px;
-    padding: 1px;
-    margin: 1px;
-    font-size: 80px;
+    padding: 10px;
+    margin: 5px;
+    size: 20px;
 }
 
 button {
-    padding: 50px 50px;
-    margin: 60px;
-    font-size: 80px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
 }
 
 #result {
-    font-size: 80px;
+    font-size: 28px;
     font-weight: bold;
-    margin-top: 100px;
+    margin-top: 20px;
 }
