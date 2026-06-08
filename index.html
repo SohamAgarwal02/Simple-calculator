@@ -3,12 +3,14 @@
 <head>
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <main>
 
         <h2>Simple Calculator</h2>
+        <button onclick="toggleTheme()">Change theme</button>
 
         
 <input type="number" id="num1" placeholder="Enter Number 1">
@@ -21,7 +23,7 @@
         <button onclick="calculate('multiply')">Multiply (*)</button>
         <button onclick="calculate('divide')">Divide (/)</button>
 
-        <h3 id="result">Answer</h3>
+        <div id="result">Answer</div>
 
     </main>
 

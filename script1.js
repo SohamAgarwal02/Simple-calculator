@@ -25,3 +25,7 @@ function calculate(operation) {
     document.getElementById("result").innerText =
         "Result: " + result;
 }
+
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+}
