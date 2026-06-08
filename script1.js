@@ -30,9 +30,9 @@ function toggleTheme() {
     document.body.classList.toggle("dark");
     if (document.body.classList.contains("dark")) {
         document.getElementById("themeStatus").innerText =
-            "Current Theme: Dark 🌙";
+            "Current Theme: Dark ";
     } else {
         document.getElementById("themeStatus").innerText =
-            "Current Theme: Light ☀️";
+            "Current Theme: Light ";
     }
 }
