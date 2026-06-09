@@ -24,6 +24,8 @@ function calculate(operation) {
 
     document.getElementById("result").innerText =
         "Result: " + result;
+        document.getElementById("history").innerHTML +=
+    num1 + " " + operation + " " + num2 + " = " + result + "<br>";
 }
 
 function toggleTheme() {
