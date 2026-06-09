@@ -1,3 +1,14 @@
+
+document.getElementById("history").innerHTML =
+    localStorage.getItem("history") || "";
+
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    document.getElementById("themeStatus").innerText =
+        "Current Theme: Dark";
+}
+
 function calculate(operation) {
 
     let num1 = Number(document.getElementById("num1").value);
@@ -24,17 +35,37 @@ function calculate(operation) {
 
     document.getElementById("result").innerText =
         "Result: " + result;
-        document.getElementById("history").innerHTML +=
-    num1 + " " + operation + " " + num2 + " = " + result + "<br>";
+
+  
+    let oldHistory =
+        localStorage.getItem("history") || "";
+
+    oldHistory +=
+        num1 + " " + operation + " " + num2 +
+        " = " + result + "<br>";
+
+    localStorage.setItem("history", oldHistory);
+
+    document.getElementById("history").innerHTML =
+        oldHistory;
 }
 
 function toggleTheme() {
+
     document.body.classList.toggle("dark");
+
     if (document.body.classList.contains("dark")) {
+
         document.getElementById("themeStatus").innerText =
-            "Current Theme: Dark ";
+            "Current Theme: Dark";
+
+        localStorage.setItem("theme", "dark");
+
     } else {
+
         document.getElementById("themeStatus").innerText =
-            "Current Theme: Light ";
+            "Current Theme: Light";
+
+        localStorage.setItem("theme", "light");
     }
 }
